@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>doodle-classifier</title>
+
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+	<link type="js" href=" https://requirejs.org/docs/release/2.3.5/minified/require.js" />
+
+ <!-- nn library script-->
+	<script src="nn.js"></script>
+	<script src="nn-matrix.js"></script>
+<!-- doodle script -->
+	<script src="doodle-sketch.js"></script>
+	<script src="configure.js"></script>
+
+
+
+	<style>
+	body{
+		background-color: #AAA;
+	}
+	button{
+		font-size: 24pt;
+		margin:10px;
+	}
+	</style>
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <div id="root">
+    <div class="loading" style="display:none;">
+      <img src="loading.svg" alt="Loading...">
+    </div>
+  </div>
+</head>
+<body>
+  <!-- <img src="man.jpg" > -->
+	 <!-- <img src="Profile/man.jpg" alt="Smiley face" height="200" width="200"> -->
+	<button id="train">train</button>
+	<button id="test">test</button>
+	<button id="guess">guess</button>
+	<button id="clear">clear</button>
+	<br>
+</body>
+</html>
